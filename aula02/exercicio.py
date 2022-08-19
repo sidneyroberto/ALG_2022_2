@@ -1,12 +1,12 @@
-resposta = input('Digite o valor do empréstimo: ')
+resposta = input('Digite o valor a ser emprestado: ')
 valor = float(resposta)
-resposta = input('Digite a taxa de juros: ')
-taxa = float(resposta)
+resposta = input('Digite o valor da taxa de juros: ')
+taxa_juros = float(resposta)
 resposta = input('Digite a quantidade de parcelas: ')
 parcelas = int(resposta)
 
-montante = valor * (1 + (taxa / 100) * parcelas)
-prestacao = montante / parcelas
+montante = valor * (1 + (taxa_juros / 100) * parcelas)
+valor_prestacao = montante / parcelas
 
-print('Montante a ser pago: %.2f' % montante)
-print('Valor da prestação: %.2f' % prestacao)
+print('Valor final do empréstimo: %.2f' % montante)
+print('Valor de cada prestação: %.2f' % valor_prestacao)
